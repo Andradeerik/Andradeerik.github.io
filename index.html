@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
+	<link href="style.css" rel="stylesheet" type="text/css" />
   <!-- <meta charset="utf-8"> -->
   <!-- <title>Typer.js Version</title> -->
   <!-- <meta content="I recreated a computer illustration by Ryan Morrison in Webflow with HTML and CSS visually, without writing any code." name="description"> -->
@@ -12,10 +12,10 @@
   <!-- <meta content="width=device-width, initial-scale=1" name="viewport"> -->
   <!-- <meta content="Webflow" name="generator"> -->
   <!-- <link href="css/normalize.css" rel="stylesheet" type="text/css"> -->
-  
+
   <!-- imp --><link href="css/webflow.css" rel="stylesheet" type="text/css">
   <!-- imp --><link href="css/computer-illustration.webflow.css" rel="stylesheet" type="text/css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script> -->
+ 	 <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script> -->
   <!-- <script type="text/javascript">
     WebFont.load({
       google: {
@@ -44,7 +44,7 @@
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	
+
 	<!-- Animate -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 
@@ -54,28 +54,141 @@
 
 </head>
 <body>
-	
+
+	<!-- <div class="btns">
+		<div class="btns-back">
+			<p>Are you sure you want to do that?</p>
+			<button class="yes">Yes</button>
+			<button class="no">No</button>
+		</div>
+		<div class="btns-front">Delete</div>
+	</div>
+
+	<p class="description">Try clicking different sides of the button</p>
+
+	<script src="script.js"></script> -->
+
+	<!-- Third party scripts and sharing UI -->
+
+	<!-- <p class="project-title">Flipside – A button that seamlessly transitions from action to confirmation</p>
+
+	<div class="credits">
+		<a href="https://github.com/hakimel/css/tree/master/flipside">Source on GitHub</a>
+		<a href="https://twitter.com/share?text=Flipside%20%E2%80%93%20A%20button%20that%20seamlessly%20transitions%20from%20action%20to%20confirmation&url=http://lab.hakim.se/flipside&via=hakimel&related=hakimel" target="_blank">Tweet this</a>
+		<a href="https://twitter.com/hakimel">Follow @hakimel</a>
+	</div>
+
+	<style type="text/css" media="screen">
+		.project-title {
+			position: absolute;
+			left: 25px;
+			bottom: 8px;
+
+			font-size: 16px;
+			color: #444;
+		}
+
+		.credits {
+			position: absolute;
+			right: 20px;
+			bottom: 25px;
+			font-size: 15px;
+			z-index: 20;
+			color: #444;
+			vertical-align: middle;
+		}
+
+		.credits * + * {
+			margin-left: 15px;
+		}
+
+		.credits a {
+			padding: 8px 10px;
+			color: #444;
+			border: 2px solid #999;
+			text-decoration: none;
+		}
+
+		.credits a:hover {
+			border-color: #555;
+			color: #222;
+		}
+
+		@media screen and (max-width: 1040px) {
+			.project-title {
+				display: none;
+			}
+
+			.credits {
+				width: 100%;
+				left: 0;
+				right: auto;
+				bottom: 0;
+				padding: 30px 0;
+				background: #ddd;
+				text-align: center;
+			}
+
+			.credits a {
+				display: inline-block;
+				margin-top: 7px;
+				margin-bottom: 7px;
+			}
+		}
+	</style>
+
+	<script>
+		var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+		(function(d, t) {
+		var g = d.createElement(t),
+				s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+	</script> -->
+
+
 	<!-- Container -->
 	<section class="container">
 
 		<!-- Information -->
 		<div class="info">
-			
+
 			<!-- Avatar and Name -->
 			<figure class="infoAvatar ">
 				<img class="img animated bounceInUp" src="img/avatar.jpg" srcset="img/avatar@2x.jpg 2x" alt="">
 				<figcaption class="name animated bounceInDown">
 					<h1>Erik Daniel Andrade</h1>
-					<a class="btn" href="https://fsocietysmx.000webhostapp.com/"><i class="fa fa-link"></i>pgina</a>
+					
+					<center>
+
+					<!-- <a class="btn" href="https://fsocietysmx.000webhostapp.com/"><i class="fa fa-link"></i>pgina</a> -->
+					
+					<div class="btns">
+						<div class="btns-back">
+							<p>¿Estás seguro de que quieres hacer eso?</p>
+							<a href="https://fsocietys.com"><button class="yes"> Si </button></a>
+							<button class="no">No</button>
+						</div>
+						<div class="btns-front">Pgina</div>
+					</div>
+				
+					<p class="description">Intente hacer clic en diferentes lados del botón</p>
+				
+					<script src="script.js"></script>
+				</center>
 				</figcaption>
 			</figure>
+
 			
+
 			<!-- Social icons -->
 			<ul class="infoSocial animated zoomIn">
-				
+
 				<!-- juego -->
 				<li class="infoSocialItem">
-						<a class="fa fa-gamepad icon" href="http://fsocietis-mx.github.io"></a>
+						<a class="fa fa-gamepad icon" href="https://fsocietys-mx.github.io/aho/"></a>
 					</li>
 
 				<!-- Codepen -->
@@ -117,6 +230,7 @@
 	  ga('create', 'UA-59139943-6', 'auto');
 	  ga('send', 'pageview');
 	</script>
+
 
 <footer>
 	<section>
@@ -213,11 +327,12 @@
 		  <script src="js/webflow.js" type="text/javascript"></script>
 		  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 		  <!-- ipm --><script src="https://s3.amazonaws.com/youfoundwaldo/typer.js"></script>
-		
-		
-		
-		
-		</section>	
+
+
+
+
+		</section>
 </footer>
+
 </body>
 </html>
